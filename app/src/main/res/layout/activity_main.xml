@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textViewSexo"
+        android:layout_width="78dp"
+        android:layout_height="37dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Sexo: "
+        android:textAlignment="viewStart"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:typeface="sans" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="77dp"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/radioFem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Feminino" />
+
+        <RadioButton
+            android:id="@+id/radioMasc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Masculino" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textViewAltura"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed"
+        android:lineSpacingExtra="8sp"
+        android:text="Altura:"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:typeface="sans" />
+
+    <EditText
+        android:id="@+id/edtAltura"
+        android:layout_width="207dp"
+        android:layout_height="58dp"
+        android:ems="10"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:id="@+id/textViewPeso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed"
+        android:lineSpacingExtra="10sp"
+        android:text="Peso:"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:typeface="sans" />
+
+    <EditText
+        android:id="@+id/edtPeso"
+        android:layout_width="209dp"
+        android:layout_height="61dp"
+        android:ems="10"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/btnCalcular"
+        android:layout_width="345dp"
+        android:layout_height="71dp"
+        android:text="Calcular" />
+</LinearLayout>
